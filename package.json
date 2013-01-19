@@ -1,0 +1,21 @@
+{
+    "name": "timing",
+    "description": "json log parser and stats",
+    "keywords": ["video"],
+    "author": "Mark Essel",
+    "version": "0.0.0",
+    "engines" : {
+        "node" : ">=0.6.0"
+    },
+    "main": "./lib/timing",
+    "private": false,
+    "repository": "https://github.com/victusfate/timing",
+    "scripts": {
+        "pretest": "cake build",
+        "prepublish": "cake build",
+    },
+    "devDependencies": {
+        "coffee-script":        "~1.3.3"
+    }
+    
+}
