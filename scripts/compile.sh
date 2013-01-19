@@ -1,1 +1,1 @@
-coffee -o ./ -cw ./timing.coffee
+coffee -o ./lib -cw ./src/
