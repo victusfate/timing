@@ -10,11 +10,8 @@ events = {}
 _(dat).each (line) ->
   if line.length
     o = JSON.parse line
-    if events[o.message]
-      events[o.message].push(o.duration)
-    else
-      events[o.message] = []
-      events[o.message].push(o.duration)
+    events[o.message] = [] if not events[o.message]
+    events[o.message].push(o.duration)
 
 _(events).each (eventSet, event) ->
   avg = 0
